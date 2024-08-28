@@ -143,13 +143,13 @@
 
         <!-- banner-section -->
         <section
-          class="flex flex-col items-center gap-4 lg:gap-6 pt-8 lg:pt-10"
+          class="flex flex-col lg:items-center gap-4 lg:gap-6 pt-8 lg:pt-10"
         >
-          <div>
+          <div class="mx-auto">
             <img class="px-[38px] lg:px-[300px]" src="./assets/banner.png" />
           </div>
-          <div class="flex flex-col items-center gap-8">
-            <div class="flex flex-col items-center gap-6">
+          <div class="flex flex-col mx-auto gap-8">
+            <div class="flex flex-col gap-6">
               <h3
                 class="text-center font-extrabold text-3xl lg:text-6xl lg:px-[42px] lg:w-[1050px]"
               >
@@ -163,9 +163,9 @@
                 light.</span
               >
             </div>
-            <div>
+            <div class="lg:mx-auto">
               <button
-                class="bg-[#ABEF5F80] font-bold rounded-[32px] lg:px-6 px-[95px] py-2.5 lg:w-auto lg:h-auto lg:py-3 gap-2.5 border border-solid border-[#ABEF5F]"
+                class="bg-[#ABEF5F80] font-bold rounded-[32px] lg:px-6 px-[95px] py-2.5 w-full lg:w-auto lg:h-auto lg:py-3 gap-2.5 border border-solid border-[#ABEF5F]"
               >
                 View Details
                 <svg
@@ -365,9 +365,162 @@
         </div>
       </section>
 
+      <!-- latest-portfolio-section -->
+      <section class="bg-white">
+        <div
+          class="px-5 lg:mx-auto lg:max-w-[1170px] py-8 lg:py-[100px] grid gap-6 lg:gap-8"
+        >
+          <div class="flex flex-col text-center justify-center gap-4">
+            <div class="lg:mx-auto">
+              <button
+                class="rounded-3xl text-[#494949] px-4 py-2 bg-[#ABEF5F33] gap-2 font-bold text-base w-auto h-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+
+                Explore our Latest works
+              </button>
+            </div>
+            <div class="grid gap-5">
+              <h3
+                class="text-center font-extrabold text-4xl flex justify-center gap-2"
+              >
+                Our Latest Portfolio
+              </h3>
+              <span class="text-center font-medium text-[#494949] lg:px-[245px]"
+                >The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.</span
+              >
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div
+              class="flex flex-col lg:flex-row gap-6 lg:col-span-8 p-6 border border-solid border-[#E5E5E5] rounded-2xl"
+            >
+              <!-- img-1 -->
+              <div>
+                <img class="w-full lg:w-auto" src="./assets/img1.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-4 max-w-[440px]">
+                <h3 class="text-[#494949] font-extrabold text-2xl">
+                  Commercial
+                </h3>
+                <span class="text-[#737373] font-medium"
+                  >The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .</span
+                >
+                <button class="flex gap-1 items-center">
+                  <!-- arrow-up-icon -->
+                  <span class="font-extrabold text-[20px]">View Details</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] bg-[#ABEF5F] p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row gap-4 lg:col-span-4 p-6 border border-solid border-[#E5E5E5] rounded-2xl"
+            >
+              <!-- img-2 -->
+              <div>
+                <img class="w-full lg:w-auto" src="./assets/img2.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2"></div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row gap-4 lg:hidden p-6 border border-solid border-[#E5E5E5] rounded-2xl"
+            >
+              <div>
+                <img class="w-full lg:w-auto" src="./assets/img5.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="lg:flex hidden rounded-2xl lg:col-span-3 p-6 border border-solid border-[#E5E5E5]"
+            >
+              <div>
+                <img class="w-full lg:w-auto" src="./assets/img3.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row gap-4 lg:col-span-6 p-6 border border-solid border-[#E5E5E5] rounded-2xl"
+            >
+              <div>
+                <img
+                  class="w-full lg:w-auto lg:h-full"
+                  src="./assets/img4.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-4 max-w-[440px] lg:max-w-[250px]">
+                <h3 class="text-[#494949] font-extrabold text-2xl">
+                  Commercial
+                </h3>
+                <span class="text-[#737373] font-medium"
+                  >The barn house captivates with its blend of rustic charm and
+                  modern.</span
+                >
+                <button class="flex gap-1 items-center">
+                  <!-- arrow-up-icon -->
+                  <span class="font-extrabold text-[20px]">View Details</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] bg-[#ABEF5F] p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex lg:hidden rounded-2xl p-6 border border-solid border-[#E5E5E5]"
+            >
+              <img class="w-full lg:w-auto" src="./assets/img3.png" alt="" />
+            </div>
+            <div
+              class="flex flex-col rounded-2xl lg:flex-row gap-4 lg:col-span-3 p-6 border border-solid border-[#E5E5E5]"
+            >
+              <img class="w-full lg:w-auto" src="./assets/img5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- unique section -->
-      <section class="px-5 lg:mx-auto lg:max-w-[1170px]">
-        <div class="lg:pb-[100px] lg:pt-[12px] grid gap-6 lg:gap-8 pb-8">
+      <section class="px-5 lg:mx-auto lg:max-w-[1170px] lg:py-[100px]">
+        <div class="lg:pt-[12px] grid gap-6 lg:gap-8 py-8">
           <div class="flex flex-col text-center justify-center gap-4">
             <div class="lg:mx-auto">
               <button
