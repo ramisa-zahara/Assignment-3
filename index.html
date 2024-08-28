@@ -30,7 +30,7 @@
   <body class="manrope bg-[#F4F4F4] min-h-screen">
     <!-- todo: fix gradient -->
     <header
-      class="pt-4 px-5 lg:px-auto bg-gradient-to-t from-[#FFFFFF] to-[#FFFFFFff] pb-10 lg:pb-[100px]"
+      class="pt-4 px-5 lg:px-auto bg-gradient-to-t from-white pb-10 lg:pb-[100px]"
     >
       <!-- navigation-section -->
       <nav>
@@ -68,35 +68,39 @@
 
           <div class="md:flex gap-4 items-center hidden">
             <!-- search-icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 inline bg-[#FFFFFF] rounded-[58px] text-[#737373]"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
+            <button class="bg-[#FFFFFF] rounded-full p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 inline text-[#737373]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </button>
             <!-- shopping-cart-icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 inline text-[#737373] fill-white rounded-[58px]"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
+            <button class="rounded-full bg-white p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 inline text-[#737373]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </button>
 
             <!-- button -->
             <button
@@ -119,20 +123,22 @@
               </svg>
             </button>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6 lg:hidden rounded-[56px] fill-white text-[#737373]"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+          <button class="lg:hidden rounded-full bg-white p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-[#737373]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
         </div>
 
         <!-- banner-section -->
@@ -184,11 +190,16 @@
     </header>
     <main class="">
       <!-- thoughtful-liveable-section -->
-      <section class="px-5 lg:px-[135px]">
+      <section class="px-5 lg:mx-auto lg:max-w-[1170px]">
         <div
-          class="lg:flex grid grid-cols-1 justify-between lg:items-start gap-[37px] lg:pt-[100px] pt-8 px-5 lg:pb-[88px] pb-8"
+          class="lg:flex grid grid-cols-1 justify-between lg:items-end gap-[37px] lg:pt-[100px] pt-8 lg:pb-[88px] pb-8 relative"
         >
-          <div class="grid gap-6 lg:mr-[135px]">
+          <img
+            class="absolute inset-0 hidden lg:inline-flex top-10 -left-8"
+            src="./assets/Vector.png"
+            alt="Vector.png"
+          />
+          <div class="flex flex-1 flex-col gap-6">
             <div class="flex flex-col gap-4 items-center lg:items-start">
               <button
                 class="rounded-3xl text-[#494949] bg-white px-4 py-2 gap-1 flex font-bold text-base h-9 w-[128px]"
@@ -251,9 +262,9 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="flex-1">
             <img
-              class="rounded-2xl my-9 lg:m-auto lg:h-[480px] lg:w-[570px]"
+              class="rounded-2xl lg:h-[480px] lg:w-[570px]"
               src="./assets/Rectangle.png"
             />
           </div>
@@ -261,10 +272,10 @@
       </section>
 
       <!-- work-process-section -->
-      <section class="px-5 lg:px-[135px]">
+      <section class="px-5 lg:mx-auto lg:max-w-[1170px]">
         <div class="lg:pb-[100px] lg:pt-[12px] grid gap-6 lg:gap-8 pb-8">
           <div class="flex flex-col text-center justify-center gap-4">
-            <div class="lg:px-[502px]">
+            <div class="lg:mx-auto">
               <button
                 class="rounded-3xl text-[#494949] px-4 py-2 bg-white gap-2 font-bold text-base w-auto h-auto"
               >
@@ -298,8 +309,8 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="grid grid-cols-1 lg:grid-cols-4">
-            <div class="grid gap-2.5 p-6 m-6 rounded-2xl bg-[#E7C1D3]">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div class="grid gap-2.5 p-6 rounded-2xl bg-[#E7C1D3]">
               <div>
                 <img src="./assets/concept.png" />
               </div>
@@ -312,7 +323,7 @@
               </div>
             </div>
             <!-- card-2 -->
-            <div class="grid gap-2.5 p-6 m-6 rounded-2xl bg-[#EFDA6E]">
+            <div class="grid gap-2.5 p-6 rounded-2xl bg-[#EFDA6E]">
               <div>
                 <img src="./assets/design-process.png" />
               </div>
@@ -325,7 +336,7 @@
               </div>
             </div>
             <!-- card-3 -->
-            <div class="grid gap-2.5 p-6 m-6 rounded-2xl bg-[#A4DAC3]">
+            <div class="grid gap-2.5 p-6 rounded-2xl bg-[#A4DAC3]">
               <div>
                 <img src="./assets/supervision.png" />
               </div>
@@ -338,7 +349,7 @@
               </div>
             </div>
             <!-- card-4 -->
-            <div class="grid gap-2.5 p-6 m-6 rounded-2xl bg-[#77AAEA]">
+            <div class="grid gap-2.5 p-6 rounded-2xl bg-[#77AAEA]">
               <div>
                 <img src="./assets/budget-planning.png" />
               </div>
@@ -354,12 +365,254 @@
         </div>
       </section>
 
+      <!-- unique section -->
+      <section class="px-5 lg:mx-auto lg:max-w-[1170px]">
+        <div class="lg:pb-[100px] lg:pt-[12px] grid gap-6 lg:gap-8 pb-8">
+          <div class="flex flex-col text-center justify-center gap-4">
+            <div class="lg:mx-auto">
+              <button
+                class="rounded-3xl text-[#494949] px-4 py-2 bg-[#ABEF5F33] gap-2 font-bold text-base w-auto h-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+
+                Subscribe Now
+              </button>
+            </div>
+            <div class="grid gap-5">
+              <h3
+                class="text-center font-extrabold text-4xl flex justify-center gap-2"
+              >
+                <div class="flex gap-1 items-center">
+                  <!-- arrow-up-icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] bg-[#ABEF5F] p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+
+                  <span class="font-extrabold text-[32px]">Rinterio Plans</span>
+                </div>
+              </h3>
+              <span class="text-center font-medium text-[#494949] lg:px-[245px]"
+                >The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.</span
+              >
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <!-- card-1 -->
+            <div class="grid gap-8 p-6 rounded-2xl bg-white shadow-lg">
+              <div class="border-b border-solid border-gray-600 pb-4">
+                <h3 class="font-extrabold text-3xl">For Three Rooms</h3>
+              </div>
+              <div class="grid gap-3">
+                <div class="grid gap-1">
+                  <h3
+                    class="font-extrabold text-[20px] text-[#494949] flex justify-between items-center"
+                  >
+                    $249
+                    <span>
+                      <button
+                        class="rounded-3xl text-[#ABEF5F] bg-[#ABEF5F33] gap-2 font-semibold text-sm px-2 py-1"
+                      >
+                        save $50
+                      </button>
+                    </span>
+                  </h3>
+                  <span class="font-medium text-[#494949]"
+                    >two months installment</span
+                  >
+                </div>
+                <button
+                  class="rounded-3xl mx-6 px-5 py-3 bg-[#ABEF5F] font-extrabold text-[18px] flex gap-2 text-center justify-center"
+                >
+                  Book Now
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] text-[#ABEF5F] bg-black p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="grid gap-8 p-6 rounded-2xl bg-white shadow-lg">
+              <div class="border-b border-solid border-gray-600 pb-4">
+                <h3 class="font-extrabold text-3xl">For Five Rooms</h3>
+              </div>
+              <div class="grid gap-3">
+                <div class="grid gap-1">
+                  <h3
+                    class="font-extrabold text-[20px] text-[#494949] flex justify-between items-center"
+                  >
+                    $500
+                    <span>
+                      <button
+                        class="rounded-3xl text-[#ABEF5F] bg-[#ABEF5F33] gap-2 font-semibold text-sm px-2 py-1"
+                      >
+                        save $100
+                      </button>
+                    </span>
+                  </h3>
+                  <span class="font-medium text-[#494949]"
+                    >three months installment</span
+                  >
+                </div>
+                <button
+                  class="rounded-3xl mx-6 px-5 py-3 bg-[#ABEF5F] font-extrabold text-[18px] flex gap-2 text-center justify-center"
+                >
+                  Book Now
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] text-[#ABEF5F] bg-black p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="grid gap-8 p-6 rounded-2xl bg-white shadow-lg">
+              <div class="border-b border-solid border-gray-600 pb-4">
+                <h3 class="font-extrabold text-3xl">For Full Apartment</h3>
+              </div>
+              <div class="grid gap-3">
+                <div class="grid gap-1">
+                  <h3
+                    class="font-extrabold text-[20px] text-[#494949] flex justify-between items-center"
+                  >
+                    $679
+                    <span>
+                      <button
+                        class="rounded-3xl text-[#ABEF5F] bg-[#ABEF5F33] gap-2 font-semibold text-sm px-2 py-1"
+                      >
+                        save $80
+                      </button>
+                    </span>
+                  </h3>
+                  <span class="font-medium text-[#494949]"
+                    >four months installment</span
+                  >
+                </div>
+                <button
+                  class="rounded-3xl mx-6 px-5 py-3 bg-[#ABEF5F] font-extrabold text-[18px] flex gap-2 text-center justify-center"
+                >
+                  Book Now
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] text-[#ABEF5F] bg-black p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="grid gap-8 p-6 rounded-2xl bg-white shadow-lg">
+              <div class="border-b border-solid border-gray-600 pb-4">
+                <h3 class="font-extrabold text-3xl">For Large Office</h3>
+              </div>
+              <div class="grid gap-3">
+                <div class="grid gap-1">
+                  <h3
+                    class="font-extrabold text-[20px] text-[#494949] flex justify-between items-center"
+                  >
+                    $759
+                    <span>
+                      <button
+                        class="rounded-3xl text-[#ABEF5F] bg-[#ABEF5F33] gap-2 font-semibold text-sm px-2 py-1"
+                      >
+                        save $99
+                      </button>
+                    </span>
+                  </h3>
+                  <span class="font-medium text-[#494949]"
+                    >five months installment</span
+                  >
+                </div>
+                <button
+                  class="rounded-3xl mx-6 px-5 py-3 bg-[#ABEF5F] font-extrabold text-[18px] flex gap-2 text-center justify-center"
+                >
+                  Book Now
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline rounded-[32px] text-[#ABEF5F] bg-black p-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- next-project-discuss-section -->
       <section class="bg-[url(./assets/bg.jpg)] bg-cover">
-        <div class="px-5 py-8 lg:px-[235px] lg:py-[100px]">
+        <div class="px-5 py-8 lg:mx-auto lg:max-w-[1170px] lg:py-[100px]">
           <div class="lg:pt-[12px] grid">
             <div class="grid text-center justify-center gap-4">
-              <div class="lg:px-[402px]">
+              <div class="lg:mx-auto">
                 <button
                   class="rounded-3xl text-[#494949] px-4 py-2 bg-[#ABEF5F33] gap-2 font-bold text-base w-auto h-auto"
                 >
